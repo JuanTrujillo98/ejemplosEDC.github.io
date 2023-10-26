@@ -1,0 +1,56 @@
+/* Pesudoclases a enlaces */
+a:link{
+    color: brown;
+}
+a:visited{
+    color: aqua;
+}
+
+/* Pseudoclases de mouse */
+a:hover{
+    color: chartreuse;
+}
+button:hover{
+    color: crimson;
+}
+button:active{
+    background-color: teal;
+}
+div:hover a{
+    background-color: chocolate;
+}
+
+/* Pseudoclases de interacción */
+input:focus{
+    border: 8px solid red;
+}
+input:checked + span{
+    color: green;
+}
+input[type="radio"]:checked,input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+input:enabled{
+    border: 4px solid green;
+}
+input:disabled{
+    border: 4px solid red;
+}
+input:required{
+    background-color: red;
+}
+p:not(.general){
+    color: blue;
+    font-size: 30px;
+}
+p::before{
+    content: "Párrafo: ";
+    color: #888;
+}
+p::after{
+    content: " --Fin del párrafo";
+    color: #888;
+}
+a::after{
+    content:"("attr(href)")";
+}
